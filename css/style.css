@@ -1,0 +1,570 @@
+/*STYLE CSS*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/abstract_hand_painted_beach_themed_watercolour_background_2705.jpg);
+    background-size: cover;
+}
+
+/*WHATSAPP ICON*/
+
+.whatsapp-icon {
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-icon img {
+    width: 80px;
+    height: 80px;
+  }
+
+/* INDEX - HEADER & NAV BAR */
+
+#navbarNav .navbar-nav .nav-item .nav-link {
+    display: flex;
+    color: black;
+    font-family: 'Chelsea Market';
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link:hover {
+    color: #FBD700;
+    text-decoration: underline;
+}
+
+
+#navbarNav {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+
+/* INDEX - FOTO SECTION */
+
+.titulo-h1 {
+    color: #FBD700;
+    text-align: center;
+    font-family: 'Chelsea Market';
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);   
+}
+ 
+.titulo-h2 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;    
+    font-style: italic;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* INDEX - BALNEARIO EAST WAY */
+
+.section-balneario2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#balneario {
+    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.card-body {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title2 {
+    color: cornflowerblue;
+    font-family: 'Chelsea Market', cursive;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 50px;
+    background-color: #FBD700;
+}
+
+.card-text {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    text-align: justify;
+}
+
+
+/* INDEX - SERVICIOS */
+
+.section-row-icons {
+    background-color: #73B9D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0;
+    margin-top: 100px;
+}
+
+.paragraph-info-icons {
+    color: black;
+    font-family: 'Chelsea Market', cursive;
+    list-style: none;
+}
+
+.icons {
+    width: 100px;
+}
+
+.icons:hover {
+    filter: invert(75%) sepia(100%) saturate(1300%) hue-rotate(350deg);
+    transition: filter 0.1s ease-in-out;
+}
+
+.content3 {
+    margin-top: 70px;
+    border: none;
+}
+
+.card-body2 {
+    background-color: #FBD700;
+}
+
+.card-body2 .card-tite2 {
+    color: black;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+}
+
+
+/* INDEX - ACTIVIDADES */
+
+.title-actividades h2 {
+    color: cornflowerblue;
+    font-family: 'Chelsea Market', cursive;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 100px 10px 20px 10px;
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #FBD700;
+}
+
+.section-actividades {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.section-actividades div {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+}
+
+.section-actividades img {
+  max-width: 100%;
+  height: auto;
+}
+
+.actividad {
+    position: relative;
+    flex: 1;
+    margin: 0 10px;
+    overflow: hidden;
+}
+  
+.actividad img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+}
+  
+.actividad:hover img {
+    opacity: 50%;
+}
+
+.actividad-titulo {
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Chelsea Market', cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FBD700;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}  
+  
+.actividad:hover .actividad-titulo {
+    opacity: 10;
+}
+
+/* INDEX - GASTRONOMÍA */
+
+  .title-gastronomia h2 {
+    color: cornflowerblue;
+    font-family: 'Chelsea Market', cursive;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 100px 10px 0px 10px;
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #FBD700;
+}
+
+.section-gastronomia {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+  
+.section-gastronomia div {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+}
+  
+.section-gastronomia img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.gastronomia {
+      position: relative;
+      flex: 1;
+      margin: 0 10px;
+      overflow: hidden;
+}
+    
+.gastronomia img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+}
+    
+.gastronomia:hover img {
+    opacity: 50%;
+}
+  
+.gastronomia-titulo {
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Chelsea Market', cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FBD700;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}  
+    
+.gastronomia:hover .gastronomia-titulo {
+    opacity: 10;
+}
+
+
+/* INDEX - FOOTER */
+
+.footer-balneario {
+    display: flex;
+    background-color: #73B9D7;
+    justify-content: space-around;
+    margin: 0;
+    height: 250px;
+}
+
+.footer-balneario h2 {
+    display: flex;
+    font-family: 'Chelsea Market';
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.footer-balneario .footer-contacto .items-contacto {
+    list-style: none;
+    padding: 10px;
+}
+
+.footer-balneario .footer-contacto .items-contacto li {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-balneario .footer-contacto .items-contacto li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.footer-balneario .footer-contacto .items-contacto li p {
+    font-family: 'Chelsea Market';
+    font-size: 20px;
+    color: black;
+}
+
+.items-contacto2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-balneario .footer-contacto2 .items-contacto2 {
+    list-style: none;
+    padding: 5px;
+}
+
+.footer-balneario .footer-contacto2 .items-contacto2 li {
+    display: flex;
+    margin: 5px;
+}
+
+.icons2 {
+    width: 50px;
+}
+
+.icons2:hover {
+    filter: invert(75%) sepia(100%) saturate(1300%) hue-rotate(350deg);
+    transition: filter 0.1s ease-in-out;
+}
+
+/* MAIN HEADERS */
+
+.main-title h2 {
+    color: cornflowerblue;
+    font-family: 'Chelsea Market', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px 20px 10px;
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #FBD700;
+}
+
+.main-title p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .main-title h2 {
+      font-size: 20px;
+    }
+}
+
+/* TAB NOSOTROS */
+
+.grid-container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+  
+  .grid-item2 {
+    text-align: center;
+}
+  
+  .grid-item2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+ 
+@media (max-width: 850px) {
+    .grid-container-nosotros {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* TAB SERVICIOS */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .grid-item p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    text-align: center;
+    background-color: #FBD700;
+  }
+  
+@media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* TAB ACTIVIDADES */
+
+  .main-title-actividades h2 {
+    color: #FBD700;
+    font-family: 'Chelsea Market', cursive;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 30px 10px 20px 10px;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: cornflowerblue;
+}
+
+.main-title p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-container-actividades {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+  
+  .grid-item3 {
+    text-align: center;
+}
+  
+  .grid-item3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-item3 p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    text-align: center;
+    background-color: #FBD700;
+  }
+ 
+@media (max-width: 850px) {
+    .grid-container-actividades {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+  /* TAB GASTRONOMIA */
+
+.main-title-actividades p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    text-align: center;
+}
+  
+  .grid-container-gastronomia {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+  
+  .grid-item4 {
+    text-align: center;
+}
+  
+  .grid-item4 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-item4 p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    text-align: center;
+    background-color: #FBD700;
+  }
+ 
+@media (max-width: 850px) {
+    .grid-container-gastronomia {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* TAB CONTACTO */
+
+.section-contacto .row {
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.col-md-6 h4 {
+    color: #FBD700;
+    font-family: 'Chelsea Market', cursive;
+    display: flex;
+    justify-content: start;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: cornflowerblue;
+}
+
+.form-label {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+    padding: 5px;
+}
+
+.map-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 80px 0px;
+}
