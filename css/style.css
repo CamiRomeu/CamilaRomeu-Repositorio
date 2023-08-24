@@ -7,19 +7,19 @@ body {
     background-size: cover;
 }
 
-/*WHATSAPP ICON*/
+/* ICONO WHATSAPP FLOAT */
 
 .whatsapp-icon {
     position: fixed;
     z-index: 1000;
     bottom: 20px;
     right: 20px;
-  }
+}
   
-  .whatsapp-icon img {
+.whatsapp-icon img {
     width: 80px;
     height: 80px;
-  }
+}
 
 /* INDEX - HEADER & NAV BAR */
 
@@ -29,14 +29,13 @@ body {
     font-family: 'Chelsea Market';
     font-weight: bold;
     font-size: 30px;
-    padding: 20px;
+    padding: 10px;
 }
 
 #navbarNav .navbar-nav .nav-item .nav-link:hover {
     color: #FBD700;
     text-decoration: underline;
 }
-
 
 #navbarNav {
     flex-basis: 100%;
@@ -63,7 +62,6 @@ body {
     font-size: 60px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 
 /* INDEX - BALNEARIO EAST WAY */
 
@@ -218,7 +216,7 @@ body {
 
 /* INDEX - GASTRONOMÍA */
 
-  .title-gastronomia h2 {
+.title-gastronomia h2 {
     color: cornflowerblue;
     font-family: 'Chelsea Market', cursive;
     display: flex;
@@ -250,10 +248,10 @@ body {
 }
   
 .gastronomia {
-      position: relative;
-      flex: 1;
-      margin: 0 10px;
-      overflow: hidden;
+    position: relative;
+    flex: 1;
+    margin: 0 10px;
+    overflow: hidden;
 }
     
 .gastronomia img {
@@ -285,7 +283,6 @@ body {
 .gastronomia:hover .gastronomia-titulo {
     opacity: 10;
 }
-
 
 /* INDEX - FOOTER */
 
@@ -354,6 +351,44 @@ body {
     transition: filter 0.1s ease-in-out;
 }
 
+@media only screen and (max-width: 767px) {
+    .footer-balneario {
+        height: 200px;
+    }
+
+    .footer-balneario {
+        justify-content: center;
+    }
+
+    .footer-contacto h2,
+    .footer-contacto2 h2 {
+        font-size: 20px;
+    }
+
+    .footer-balneario .footer-contacto .items-contacto li img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .footer-balneario .footer-contacto .items-contacto li p {
+        font-size: 10px;
+    }
+
+    .icons2 {
+        width: 25px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
 /* MAIN HEADERS */
 
 .main-title h2 {
@@ -376,8 +411,20 @@ body {
     text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .main-title h2 {
+      font-size: 60px;
+    }
+}
+
+@media (min-width: 286px) and (max-width: 767px) {
+    .main-title h2 {
+      font-size: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .main-title p {
       font-size: 20px;
     }
 }
@@ -391,11 +438,11 @@ body {
     padding: 20px;
 }
   
-  .grid-item2 {
+.grid-item2 {
     text-align: center;
 }
   
-  .grid-item2 img {
+.grid-item2 img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -414,35 +461,35 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-  }
+}
   
-  .grid-item {
+.grid-item {
     text-align: center;
-  }
+}
   
-  .grid-item img {
+.grid-item img {
     max-width: 100%;
     height: auto;
-  }
+}
 
-  .grid-item p {
+.grid-item p {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     font-size: 30px;
     text-align: center;
     background-color: #FBD700;
-  }
+}
   
-@media (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
+}
 
-  /* TAB ACTIVIDADES */
+/* TAB ACTIVIDADES */
 
-  .main-title-actividades h2 {
+.main-title-actividades h2 {
     color: #FBD700;
     font-family: 'Chelsea Market', cursive;
     display: flex;
@@ -469,11 +516,11 @@ body {
     padding: 20px;
 }
   
-  .grid-item3 {
+.grid-item3 {
     text-align: center;
 }
   
-  .grid-item3 img {
+.grid-item3 img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -486,15 +533,23 @@ body {
     font-size: 30px;
     text-align: center;
     background-color: #FBD700;
-  }
+}
  
-@media (max-width: 850px) {
+@media only screen and (max-width: 767px) {
+    .main-title-actividades h2 {
+        font-size: 30px;
+    }
+
+    .grid-item3 p {
+        font-size: 15px;
+    }
+
     .grid-container-actividades {
       grid-template-columns: repeat(2, 1fr);
     }
 }
 
-  /* TAB GASTRONOMIA */
+/* TAB GASTRONOMIA */
 
 .main-title-actividades p {
     color: black;
@@ -509,6 +564,8 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
   
   .grid-item4 {
@@ -528,30 +585,41 @@ body {
     font-size: 30px;
     text-align: center;
     background-color: #FBD700;
-  }
+}
  
-@media (max-width: 850px) {
+@media only screen and (max-width: 767px) {
+    .main-title-actividades h2 {
+        font-size: 30px;
+    }
+
+    .grid-item4 p {
+        font-size: 15px;
+    }
+
     .grid-container-gastronomia {
       grid-template-columns: repeat(2, 1fr);
     }
 }
 
-
 /* TAB CONTACTO */
 
 .section-contacto .row {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 50px 0px 50px 0px;
+    margin: 50px 50px 50px 50px;
 }
 
 .col-md-6 h4 {
     color: #FBD700;
     font-family: 'Chelsea Market', cursive;
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     font-size: 50px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     background-color: cornflowerblue;
+    margin-top: 10px;
 }
 
 .form-label {
@@ -562,9 +630,49 @@ body {
     padding: 5px;
 }
 
+.button-enviar {
+    background-color: cornflowerblue;
+    color: #FBD700;
+    font-size: 30px;
+    font-family: 'Chelsea Market', cursive;
+    border: none;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.button-enviar:hover {
+    background-color: #FBD700;
+    color: cornflowerblue;
+}
+
 .map-contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0px 80px 0px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+    .col-md-6 {
+      max-width: 100%;
+    }
+
+    .col-md-6 h4 {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .main-title p {
+        font-size: 20px;
+    }
+
+    .mb-6 .form-label {
+        font-size: 15px;
+    }
+
+    .button-enviar {
+        font-size: 20px;
+        width: 100px;
+    }
 }
