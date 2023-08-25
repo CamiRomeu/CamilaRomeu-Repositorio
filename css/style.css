@@ -21,6 +21,13 @@ body {
     height: 80px;
 }
 
+@media (max-width: 767px) {
+    .whatsapp-icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 /* INDEX - HEADER & NAV BAR */
 
 #navbarNav .navbar-nav .nav-item .nav-link {
@@ -43,6 +50,13 @@ body {
     align-items: center;
 }
 
+@media (max-width: 767px) {
+    #navbarNav .navbar-nav .nav-item .nav-link {
+        font-weight: bolder;
+        font-size: 15px;
+    }
+}
+
 /* INDEX - FOTO SECTION */
 
 .titulo-h1 {
@@ -61,6 +75,21 @@ body {
     font-style: italic;
     font-size: 60px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+    .titulo-h1 {
+        font-weight: bolder;
+        font-size: 30px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    }
+
+    .titulo-h2 {
+        font-size: 20px;
+        font-weight: lighter; 
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin-top: -10px;
+    }
 }
 
 /* INDEX - BALNEARIO EAST WAY */
@@ -101,6 +130,21 @@ body {
     text-align: justify;
 }
 
+@media (max-width: 767px) {
+    .card-title2 {
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        margin-top: -70px;
+    }
+
+    .card-text {
+        font-size: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin-top: 10px;
+        text-align: center;
+    }
+}
 
 /* INDEX - SERVICIOS */
 
@@ -144,6 +188,22 @@ body {
     font-size: 20px;
 }
 
+@media (max-width: 767px) {
+    .section-row-icons {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .icons {
+        width: 50px;
+    }
+
+    .card-text {
+        font-size: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin-top: 10px;
+    }
+}
 
 /* INDEX - ACTIVIDADES */
 
@@ -159,59 +219,59 @@ body {
     background-color: #FBD700;
 }
 
-.section-actividades {
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.actividad .actividad-titulo {
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Chelsea Market', cursive;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #FBD700;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+} 
+ 
+.grid-container-hacer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
-
-.section-actividades div {
-  flex: 1;
-  margin: 0 10px;
-  padding: 20px;
-}
-
-.section-actividades img {
-  max-width: 100%;
-  height: auto;
-}
-
+  
 .actividad {
     position: relative;
-    flex: 1;
-    margin: 0 10px;
     overflow: hidden;
 }
-  
+
 .actividad img {
-    display: flex;
     max-width: 100%;
     height: auto;
-    transition: filter 0.3s ease-in-out;
 }
-  
+    
+.actividad:hover .actividad-titulo {
+    opacity: 1;
+}
+
 .actividad:hover img {
     opacity: 50%;
 }
 
-.actividad-titulo {
-    position: absolute;
-    font-size: 40px;
-    font-family: 'Chelsea Market', cursive;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #FBD700;
-    color: white;
-    padding: 50px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}  
-  
-.actividad:hover .actividad-titulo {
-    opacity: 10;
+@media (max-width: 767px) {
+    .title-actividades h2 {
+        font-size: 30px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .actividad .actividad-titulo {
+        font-size: 20px;
+    }
+    
+    .grid-container-hacer {
+          grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* INDEX - GASTRONOMÍA */
@@ -222,66 +282,66 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-    margin: 100px 10px 0px 10px;
+    margin: 100px 10px 20px 10px;
     font-size: 80px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     background-color: #FBD700;
 }
 
-.section-gastronomia {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-}
-  
-.section-gastronomia div {
-    flex: 1;
-    margin: 0 10px;
-    padding: 20px;
-}
-  
-.section-gastronomia img {
-    max-width: 100%;
-    height: auto;
-}
-  
-.gastronomia {
-    position: relative;
-    flex: 1;
-    margin: 0 10px;
-    overflow: hidden;
-}
-    
-.gastronomia img {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    transition: filter 0.3s ease-in-out;
-}
-    
-.gastronomia:hover img {
-    opacity: 50%;
-}
-  
-.gastronomia-titulo {
+.actividad2 .actividad-titulo2 {
     position: absolute;
     font-size: 40px;
     font-family: 'Chelsea Market', cursive;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #FBD700;
     color: white;
-    padding: 50px;
+    padding: 15px;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-}  
+} 
+
+.grid-container-comer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.actividad2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.actividad2 img {
+    max-width: 100%;
+    height: auto;
+}
     
-.gastronomia:hover .gastronomia-titulo {
-    opacity: 10;
+.actividad2:hover .actividad-titulo2 {
+    opacity: 1;
+}
+
+.actividad2:hover img {
+    opacity: 50%;
+}
+
+@media (max-width: 767px) {
+    .title-gastronomia h2 {
+        font-size: 30px;
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .actividad2 .actividad-titulo2 {
+        font-size: 20px;
+    }
+    
+    .grid-container-comer {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 30px;
+    }
 }
 
 /* INDEX - FOOTER */
@@ -378,15 +438,6 @@ body {
     .icons2 {
         width: 25px;
     }
-
-
-
-
-
-
-
-
-
 }
 
 /* MAIN HEADERS */
@@ -448,7 +499,7 @@ body {
     border-radius: 10px;
 }
  
-@media (max-width: 850px) {
+@media (max-width: 767px) {
     .grid-container-nosotros {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -482,6 +533,10 @@ body {
 }
   
 @media only screen and (max-width: 767px) {
+    .grid-item p {
+        font-size: 15px;
+    }
+    
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
     }
