@@ -1,0 +1,27 @@
+/* MAIN HEADERS */
+
+.main-title h2 {
+    @include question-title (#FBD700, cornflowerblue, 'Chelsea Market', 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px 20px 10px;
+}
+
+.main-title p {
+    @include parrafo-title (black, 'Arial', 30px);
+    text-align: center;
+    text-shadow: $text-shadow;
+}
+
+@media (min-width: 286px) and (max-width: 767px) {
+    .main-title h2 {
+      font-size: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .main-title p {
+      font-size: 20px;
+    }
+}

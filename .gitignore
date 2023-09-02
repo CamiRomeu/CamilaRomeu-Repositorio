@@ -6,3 +6,10 @@ img_cache
 
 background.jpg
 
+copia.css
+
+/node_modules
+
+package-lock.json
+
+package.json

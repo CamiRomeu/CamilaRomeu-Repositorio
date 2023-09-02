@@ -1,0 +1,47 @@
+/* TAB GASTRONOMIA */
+
+.main-title-actividades p {
+  @include parrafo-title (black, 'Arial', 30px);
+    text-align: center;
+    text-shadow: $text-shadow;
+}
+  
+.grid-container-gastronomia {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+  
+.grid-item4 {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  p {
+    @include parrafo-title (black, 'Arial', 30px);
+    text-align: center;
+    text-shadow: $text-shadow;
+    background-color: $secondary-color;
+  }
+}
+ 
+@media only screen and (max-width: 767px) {
+    .main-title-actividades h2 {
+        font-size: 30px;
+    }
+
+    .grid-item4 p {
+        font-size: 15px;
+    }
+
+    .grid-container-gastronomia {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
