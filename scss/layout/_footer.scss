@@ -1,0 +1,98 @@
+/* INDEX - FOOTER */
+
+.footer-balneario {
+    display: flex;
+    background-color: $principal-color;
+    justify-content: space-around;
+    margin: 0;
+    height: 250px;
+
+    h2 {
+        display: flex;
+        font-family: $font-family;
+        font-size: 30px;
+        color: $color-black;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .footer-contacto {
+        .items-contacto {
+            list-style: none;
+            padding: 10px;
+        
+            li {
+                display: flex;
+                margin-top: 10px;
+            
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 5px;
+                }
+                    p {
+                        font-family: $font-family;
+                        font-size: 20px;
+                        color: $color-black;
+                    }
+            }
+        }
+    }
+
+    .footer-contacto2 {
+        .items-contacto2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 5px;
+
+            li {
+                display: flex;
+                margin: 5px;
+            }
+        }
+    }
+}
+
+.icons2 {
+    width: 50px;
+
+    &:hover {
+        filter: invert(75%) sepia(100%) saturate(1300%) hue-rotate(350deg);
+        transition: filter 0.1s ease-in-out;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .footer-balneario {
+        height: 200px;
+        justify-content: center;
+
+        .footer-contacto {
+            .items-contacto {
+                li {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 5px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .footer-contacto h2,
+            .footer-contacto2 h2 {
+                font-size: 15px;
+            }
+
+            .icons2 {
+                width: 20px;
+            }
+        }
+    }   
+}

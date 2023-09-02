@@ -1,0 +1,58 @@
+/* INDEX - SERVICIOS */
+
+.section-row-icons {
+    background-color: $principal-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0;
+    margin-top: 100px;
+}
+
+.paragraph-info-icons {
+    color: $color-black;
+    font-family: $font-family;
+    list-style: none;
+}
+
+.icons {
+    width: 100px;
+
+    &:hover {
+        filter: invert(75%) sepia(100%) saturate(1300%) hue-rotate(350deg);
+        transition: filter 0.1s ease-in-out;
+    }
+}
+
+.content3 {
+    margin-top: 70px;
+    border: none;
+}
+
+.card-body2 {
+    background-color: $secondary-color;
+
+    .card-tite2 {
+        color: $color-black;
+        font-family: $font-family;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-row-icons {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .icons {
+        width: 50px;
+    }
+
+    .card-text {
+        font-size: 20px;
+        text-shadow: $text-shadow;
+        margin-top: 10px;
+    }
+}

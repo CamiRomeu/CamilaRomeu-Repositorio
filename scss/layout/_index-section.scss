@@ -1,0 +1,86 @@
+/* INDEX - FOTO SECTION */
+
+.titulo-h1 {
+    color: $secondary-color;
+    text-align: center;
+    font-family: 'Chelsea Market';
+    font-size: 80px;
+    text-shadow: $text-shadow; 
+}
+ 
+.titulo-h2 {
+    color: $color-white;
+    text-align: center;
+    font-family: $font-family-dos;
+    font-weight: lighter;    
+    font-style: italic;
+    font-size: 60px;
+    text-shadow: $text-shadow;
+}
+
+@media (max-width:767px) {
+    .titulo-h1 {
+        font-weight: bolder;
+        font-size: 30px;
+        text-shadow: $text-shadow;
+    }
+
+    .titulo-h2 {
+        font-size: 20px;
+        font-weight: lighter; 
+        text-shadow: $text-shadow;
+        margin-top: -10px;
+    }
+}
+
+/* INDEX - BALNEARIO EAST WAY */
+
+.section-balneario2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#balneario {
+    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.card-body {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title2 {
+    color: $alternative-color;
+    font-family: $font-family;
+    text-shadow: $text-shadow;
+    font-size: 50px;
+    background-color: $secondary-color
+}
+
+.card-text {
+    @include parrafo-title (black, 'Arial', 30px);
+    text-align: justify;
+    text-shadow: $text-shadow;
+}
+
+@media (max-width: 767px) {
+    .card-title2 {
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        margin-top: -70px;
+    }
+
+    .card-text {
+        font-size: 20px;
+        text-shadow: $text-shadow;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

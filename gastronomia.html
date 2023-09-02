@@ -7,12 +7,14 @@
     <!--ARCHIVO STYLE CSS-->
     <link rel="stylesheet" href="css/style.css">
 
-
     <!--CND BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-
     4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+    <!--AOS ANIMATION-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--FAMILY FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +30,7 @@
 
   <!--ICONO WHATSAPP FLOAT-->
 
-  <div class="whatsapp-icon">
+  <div class="whatsapp-icon" data-aos="fade-left" data-aos-duration="500">
     <a href="https://wa.me/1234567890">
       <img src="img/icon whatsapp green.png" alt="Icono de Whatsapp">
     </a>
@@ -69,8 +71,8 @@
   </header>
 
   <section class="main-title">
-    <h2>GASTRONOMÍA</h2>
-    <p>
+    <h2 data-aos="fade-right" data-aos-delay="800">GASTRONOMÍA</h2>
+    <p data-aos="zoom-in-down" data-aos-duration="3000">
       <strong>Balneario East Way</strong> ofrece una gastronomía de primer nivel.
           Con una vista privilegiada al mar y a la piscina, <br>nuestros espacios son de encuentro 
           donde podás disfrutar de inolvidables desayunos, almuerzos o livianos snacks al regresar de la playa.
@@ -81,21 +83,21 @@
   </section>
 
   <section class="main-title-actividades">
-    <h2>BARES</h2>
+    <h2 data-aos="fade-right" data-aos-delay="800">BARES</h2>
     <div class="grid-container-gastronomia">
-      <div class="grid-item4">
+      <div class="grid-item4" data-aos="flip-up" data-aos-delay="2000">
         <img src="img/bar1.png" alt="Foto Bar">
         <p>Tiene Pinta</p>
       </div>
-      <div class="grid-item4">
+      <div class="grid-item4" data-aos="flip-up" data-aos-delay="2000">
         <img src="img/bar2.png" alt="Foto Bar">
        <p>El Chiringo</p>
       </div>
-      <div class="grid-item4">
+      <div class="grid-item4" data-aos="flip-up" data-aos-delay="2000">
         <img src="img/bar3.png" alt="Foto Bar">
         <p>Ocean Beach</p>
       </div>
-      <div class="grid-item4">
+      <div class="grid-item4" data-aos="flip-up" data-aos-delay="2000">
         <img src="img/bar4.png" alt="Foto Bar">
         <p>Cuatro de Copas</p>
       </div>
@@ -103,34 +105,35 @@
   </section>
 
   <section class="main-title-actividades">
-    <h2>RESTAURANTES</h2>
-    <div class="grid-container-actividades">
+    <h2 data-aos="fade-right" data-aos-delay="800">RESTAURANTES</h2>
+    <div class="grid-container-actividades" data-aos="flip-up" data-aos-delay="2000">
       <div class="grid-item4">
         <img src="img/resto1.png" alt="Foto Restaurant">
         <p>La Caracola</p>
       </div>
-      <div class="grid-item4">
+      <div class="grid-item4" data-aos="flip-up" data-aos-delay="2000">
         <img src="img/resto5.png" alt="Foto Restaurant">
         <p>Parrilla Argentina</p>
       </div>
-      <div class="grid-item4">
+      <div class="grid-item4" data-aos="flip-up" data-aos-delay="2000">
         <img src="img/resto3.png" alt="Foto Restaurant">
         <p>Ostras</p>
       </div>
-      <div class="grid-item4">
+      <div class="grid-item4" data-aos="flip-up" data-aos-delay="2000">
         <img src="img/resto4.png" alt="Foto Restaurant">
         <p>Full Sand</p>
       </div>
     </div>
   </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script>AOS.init();</script>
 </body>
 
 <!--FOOTER-->
 
 <footer class="footer-balneario">
-  <section class="footer-contacto">
+  <section class="footer-contacto" data-aos="zoom-in" data-aos-duration="2000">
     <h2>Contactanos</h2>
     <ul class="items-contacto">
       <li>
@@ -147,7 +150,7 @@
       </li>
     </ul>
   </section>
-  <section class="footer-contacto2">
+  <section class="footer-contacto2" data-aos="zoom-in" data-aos-duration="2000">
     <h2>Redes Sociales</h2>
     <ul class="items-contacto2">
       <li>

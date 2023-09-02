@@ -1,0 +1,34 @@
+/* TAB SERVICIOS */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+  
+.grid-item {
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    p {
+        @include parrafo-title (black, 'Arial', 30px);
+        text-align: center;
+        text-shadow: $text-shadow;
+        background-color: $secondary-color;
+    }
+}
+  
+@media only screen and (max-width: 767px) {
+    .grid-item p {
+        font-size: 15px;
+    }
+    
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}

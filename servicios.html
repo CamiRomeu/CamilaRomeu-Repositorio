@@ -7,12 +7,14 @@
     <!--ARCHIVO STYLE CSS-->
     <link rel="stylesheet" href="css/style.css">
 
-
     <!--CND BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-
     4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+    <!--AOS ANIMATION-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--FAMILY FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +30,7 @@
 
   <!--ICONO WHATSAPP FLOAT-->
 
-  <div class="whatsapp-icon">
+  <div class="whatsapp-icon" data-aos="fade-left" data-aos-duration="500">
     <a href="https://wa.me/1234567890">
       <img src="img/icon whatsapp green.png" alt="Icono de Whatsapp">
     </a>
@@ -46,7 +48,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       </div>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> 
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="nosotros.html">NOSOTROS</a>
@@ -69,14 +71,16 @@
   </header>
   
 <section class="main-title">
-  <h2>SERVICIOS</h2>
-  <p>En <strong>Balneario East Way</strong>, todos nuestros servicios están pensados para que quienes nos visiten<br> 
+  <h2 data-aos="fade-right" data-aos-delay="800">SERVICIOS</h2>
+  <p data-aos="zoom-in-down" data-aos-duration="3000">
+    En <strong>Balneario East Way</strong>, todos nuestros servicios están pensados para que quienes nos visiten<br> 
     puedan disfrutar a máximo la tranquilidad de nuestras playas, atardeceres soñados, actividades en familia y 
-    de la mejor gastronomía. <br><strong>Conocé todos nuestros servicios!</strong></p>
+    de la mejor gastronomía. <br><strong>Conocé todos nuestros servicios!</strong>
+  </p>
 </section>
 
 <section>
-  <div class="grid-container">
+  <div class="grid-container" data-aos="flip-up" data-aos-delay="2000">
     <div class="grid-item">
       <img src="img/alquiler.png" alt="Foto Sombrillas">
       <p>Alquiler de Sombrillas</p>
@@ -116,13 +120,14 @@
   </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script>AOS.init();</script>
 </body>
 
 <!--FOOTER-->
 
 <footer class="footer-balneario">
-  <section class="footer-contacto">
+  <section class="footer-contacto" data-aos="zoom-in" data-aos-duration="2000">
     <h2>Contactanos</h2>
     <ul class="items-contacto">
       <li>
@@ -139,7 +144,7 @@
       </li>
     </ul>
   </section>
-  <section class="footer-contacto2">
+  <section class="footer-contacto2" data-aos="zoom-in" data-aos-duration="2000">
     <h2>Redes Sociales</h2>
     <ul class="items-contacto2">
       <li>

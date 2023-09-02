@@ -1,0 +1,53 @@
+/* TAB ACTIVIDADES */
+
+.main-title-actividades h2 {
+    @include main-title-actividades (#FBD700, cornflowerblue,'Chelsea Market', 60px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 30px 10px 20px 10px;
+}
+
+.main-title p {
+    @include parrafo-title (black, 'Arial', 30px);
+    text-align: center;
+    text-shadow: $text-shadow;
+}
+
+.grid-container-actividades {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+  
+.grid-item3 {
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    p {
+        @include parrafo-title (black, 'Arial', 30px);
+        text-align: center;
+        text-shadow: $text-shadow;
+        background-color: $secondary-color;
+    }
+}
+ 
+@media only screen and (max-width: 767px) {
+    .main-title-actividades h2 {
+        font-size: 30px;
+    }
+
+    .grid-item3 p {
+        font-size: 15px;
+    }
+
+    .grid-container-actividades {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,75 @@
+/* TAB CONTACTO */
+
+.section-contacto .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px 50px 50px;
+}
+
+.col-md-6 h4 {
+    color: $secondary-color;
+    font-family: 'Chelsea Market', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: $text-shadow;
+    background-color: $alternative-color;
+    margin-top: 10px;
+}
+
+.form-label {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: $text-shadow;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.button-enviar {
+    background-color: $alternative-color;
+    color: $secondary-color;
+    font-size: 30px;
+    font-family: 'Chelsea Market', cursive;
+    border: none;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.button-enviar:hover {
+    background-color: $secondary-color;
+    color: $alternative-color;
+}
+
+.map-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+    .col-md-6 {
+      max-width: 100%;
+    }
+
+        .h4 {
+            font-size: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+
+     .main-title p {
+        font-size: 20px;
+    }
+
+     .mb-6 .form-label {
+        font-size: 15px;
+    }
+
+    .button-enviar {
+        font-size: 20px;
+        width: 100px;
+    }
+}
