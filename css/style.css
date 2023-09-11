@@ -112,7 +112,7 @@ body {
   font-family: "Chelsea Market";
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   font-size: 50px;
-  background-color: #FBD700;
+  background-image: linear-gradient(to right, #FBD700, #FAEA89);
 }
 
 .card-text {
@@ -208,6 +208,7 @@ body {
   justify-content: start;
   align-items: center;
   margin: 100px 10px 20px 10px;
+  background-image: linear-gradient(to right, #FBD700, #FAEA89);
 }
 
 .section-actividades {
@@ -291,6 +292,7 @@ body {
   justify-content: start;
   align-items: center;
   margin: 100px 10px 20px 10px;
+  background-image: linear-gradient(to right, #FBD700, #FAEA89);
 }
 
 .section-gastronomia {
@@ -429,6 +431,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 30px 10px 20px 10px;
+  background-image: radial-gradient(ellipse at center, #FBD700, #FAEA89);
 }
 
 .main-title p {
@@ -628,7 +631,7 @@ body {
   font-size: 50px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   margin-top: 10px;
-  background-image: radial-gradient(ellipse at center, #73B9D7, #8cbed4);
+  background-image: radial-gradient(ellipse at center, #73B9D7, #8CBED4);
 }
 
 .form-label {
@@ -640,7 +643,7 @@ body {
 }
 
 .button-enviar {
-  background-image: radial-gradient(ellipse at center, #73B9D7, #8cbed4);
+  background-image: radial-gradient(ellipse at center, #73B9D7, #8CBED4);
   color: #FBD700;
   font-size: 30px;
   font-family: "Chelsea Market", cursive;

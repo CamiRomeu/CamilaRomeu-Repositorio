@@ -16,7 +16,7 @@
     font-size: 50px;
     text-shadow: $text-shadow;
     margin-top: 10px;
-    background-image: radial-gradient(ellipse at center, $principal-color, #8cbed4);
+    background-image: radial-gradient(ellipse at center, $principal-color, $principal-color-two);
 }
 
 .form-label {
@@ -28,7 +28,7 @@
 }
 
 .button-enviar {
-    background-image: radial-gradient(ellipse at center, $principal-color, #8cbed4);
+    background-image: radial-gradient(ellipse at center, $principal-color, $principal-color-two);
     color: $secondary-color;
     font-size: 30px;
     font-family: 'Chelsea Market', cursive;
