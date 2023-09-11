@@ -60,7 +60,7 @@
     font-family: $font-family;
     text-shadow: $text-shadow;
     font-size: 50px;
-    background-color: $secondary-color
+    background-image: linear-gradient(to right, $secondary-color,$secondary-color-two);
 }
 
 .card-text {

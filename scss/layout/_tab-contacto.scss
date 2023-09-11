@@ -15,8 +15,8 @@
     align-items: center;
     font-size: 50px;
     text-shadow: $text-shadow;
-    background-color: $alternative-color;
     margin-top: 10px;
+    background-image: radial-gradient(ellipse at center, $principal-color, #8cbed4);
 }
 
 .form-label {
@@ -28,18 +28,18 @@
 }
 
 .button-enviar {
-    background-color: $alternative-color;
+    background-image: radial-gradient(ellipse at center, $principal-color, #8cbed4);
     color: $secondary-color;
     font-size: 30px;
     font-family: 'Chelsea Market', cursive;
     border: none;
     width: 200px;
     margin-top: 10px;
-}
 
-.button-enviar:hover {
-    background-color: $secondary-color;
-    color: $alternative-color;
+    &:hover {
+        background-image: radial-gradient(ellipse at center, $secondary-color, $secondary-color-two);
+        color: $alternative-color;
+    }
 }
 
 .map-contact {

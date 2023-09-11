@@ -112,7 +112,7 @@ body {
   font-family: "Chelsea Market";
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   font-size: 50px;
-  background-color: #FBD700;
+  background-image: linear-gradient(to right, #FBD700, #FAEA89);
 }
 
 .card-text {
@@ -198,7 +198,7 @@ body {
   gap: 40px;
 }
 
-.title-actividades h2, .title-gastronomia h2 h2 {
+.title-actividades h2 {
   color: cornflowerblue;
   font-family: "Chelsea Market";
   font-size: 80px;
@@ -208,6 +208,7 @@ body {
   justify-content: start;
   align-items: center;
   margin: 100px 10px 20px 10px;
+  background-image: linear-gradient(to right, #FBD700, #FAEA89);
 }
 
 .section-actividades {
@@ -261,7 +262,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .title-actividades h2, .title-gastronomia h2 h2 {
+  .title-actividades h2 {
     font-size: 30px;
     margin-top: 20px;
     justify-content: center;
@@ -279,6 +280,19 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-bottom: 50px;
+}
+
+.title-gastronomia h2 {
+  color: cornflowerblue;
+  font-family: "Chelsea Market";
+  font-size: 80px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #FBD700;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 100px 10px 20px 10px;
+  background-image: linear-gradient(to right, #FBD700, #FAEA89);
 }
 
 .section-gastronomia {
@@ -417,6 +431,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 30px 10px 20px 10px;
+  background-image: radial-gradient(ellipse at center, #FBD700, #FAEA89);
 }
 
 .main-title p {
@@ -615,8 +630,8 @@ body {
   align-items: center;
   font-size: 50px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  background-color: cornflowerblue;
   margin-top: 10px;
+  background-image: radial-gradient(ellipse at center, #73B9D7, #8cbed4);
 }
 
 .form-label {
@@ -628,7 +643,7 @@ body {
 }
 
 .button-enviar {
-  background-color: cornflowerblue;
+  background-image: radial-gradient(ellipse at center, #73B9D7, #8cbed4);
   color: #FBD700;
   font-size: 30px;
   font-family: "Chelsea Market", cursive;
@@ -636,9 +651,8 @@ body {
   width: 200px;
   margin-top: 10px;
 }
-
 .button-enviar:hover {
-  background-color: #FBD700;
+  background-image: radial-gradient(ellipse at center, #FBD700, #FAEA89);
   color: cornflowerblue;
 }
 
