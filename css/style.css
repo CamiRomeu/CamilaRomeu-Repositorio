@@ -32,7 +32,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .navbar-nav .nav-item .nav-link {
+  #navbarNav .navbar-nav .nav-item .nav-link {
     font-weight: bolder;
     font-size: 15px;
   }
@@ -192,12 +192,6 @@ body {
   }
 }
 /* INDEX - ACTIVIDADES */
-.grid-container-hacer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
-
 .title-actividades h2 {
   color: cornflowerblue;
   font-family: "Chelsea Market";
@@ -207,7 +201,7 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin: 100px 10px 20px 10px;
+  margin: 50px 10px 20px 10px;
   background-image: linear-gradient(to right, #FBD700, #FAEA89);
 }
 
@@ -261,22 +255,58 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-@media (max-width: 767px) {
+.grid-container-hacer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .title-actividades h2 {
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .section-actividades {
+    flex-direction: column;
+  }
+  .actividad {
+    flex: 1;
+    margin: 0 10px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .actividad img {
+    max-width: 100%;
+  }
+  .actividad-titulo, .gastronomia-titulo {
+    font-size: 30px;
+  }
+  .grid-container-hacer {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
   .title-actividades h2 {
     font-size: 30px;
-    margin-top: 20px;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
   }
-  .actividad .actividad-titulo, .actividad .gastronomia-titulo {
-    font-size: 20px;
+  .actividad-titulo, .gastronomia-titulo {
+    font-size: 24px;
+    padding: 5px;
   }
   .grid-container-hacer {
     grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
   }
 }
 /* INDEX - GASTRONOMÍA */
 .grid-container-comer {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-bottom: 50px;
@@ -291,7 +321,7 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin: 100px 10px 20px 10px;
+  margin: 50px 10px 20px 10px;
   background-image: linear-gradient(to right, #FBD700, #FAEA89);
 }
 
@@ -331,18 +361,40 @@ body {
   opacity: 10;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .title-gastronomia h2 {
-    font-size: 30px;
-    margin-top: 40px;
+    font-size: 50px;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
   }
-  .actividad2 .actividad-titulo2 {
-    font-size: 20px;
+  .section-gastronomia {
+    flex-direction: column;
+  }
+  .gastronomia {
+    flex: 1;
+    margin: 0 10px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .gastronomia img {
+    max-width: 100%;
   }
   .grid-container-comer {
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title-gastronomia h2 {
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .grid-container-comer {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
   }
 }
 /* INDEX - FOOTER */
@@ -404,6 +456,9 @@ body {
     height: 200px;
     justify-content: center;
   }
+  .footer-balneario .footer-contacto h2 {
+    font-size: 20px;
+  }
   .footer-balneario .footer-contacto .items-contacto li img {
     width: 20px;
     height: 20px;
@@ -412,11 +467,10 @@ body {
   .footer-balneario .footer-contacto .items-contacto li p {
     font-size: 10px;
   }
-  .footer-balneario .footer-contacto .footer-contacto h2,
-  .footer-balneario .footer-contacto .footer-contacto2 h2 {
-    font-size: 15px;
+  .footer-balneario .footer-contacto2 h2 {
+    font-size: 20px;
   }
-  .footer-balneario .footer-contacto .icons2 {
+  .footer-balneario .icons2 {
     width: 20px;
   }
 }
@@ -667,7 +721,7 @@ body {
   .col-md-6 {
     max-width: 100%;
   }
-  .h4 {
+  .col-md-6 h4 {
     font-size: 20px;
     text-align: center;
     justify-content: center;

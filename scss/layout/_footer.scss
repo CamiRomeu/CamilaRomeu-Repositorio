@@ -71,6 +71,10 @@
         justify-content: center;
 
         .footer-contacto {
+            h2 {
+                font-size: 20px;
+            }
+
             .items-contacto {
                 li {
                     img {
@@ -84,15 +88,16 @@
                     }
                 }
             }
-
-            .footer-contacto h2,
-            .footer-contacto2 h2 {
-                font-size: 15px;
-            }
-
-            .icons2 {
-                width: 20px;
+        }
+       
+        .footer-contacto2 {
+            h2 {
+                font-size: 20px;
             }
         }
-    }   
+
+        .icons2 {
+            width: 20px;
+        }
+    }
 }
