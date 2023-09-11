@@ -49,19 +49,11 @@ body {
 }
 
 @media (max-width: 767px) {
-    .whatsapp-icon img {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media (max-width: 767px) {
   .whatsapp-icon img {
     width: 40px;
     height: 40px;
   }
 }
-
 /* INDEX - FOTO SECTION */
 .titulo-h1 {
   color: #FBD700;
@@ -79,21 +71,6 @@ body {
   font-style: italic;
   font-size: 60px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 767px) {
-    .titulo-h1 {
-        font-weight: bolder;
-        font-size: 30px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
-    }
-
-    .titulo-h2 {
-        font-size: 20px;
-        font-weight: lighter; 
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        margin-top: -10px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -147,7 +124,20 @@ body {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-
+@media (max-width: 767px) {
+  .card-title2 {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -70px;
+  }
+  .card-text {
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    text-align: center;
+  }
+}
 /* INDEX - SERVICIOS */
 .section-row-icons {
   background-color: #73B9D7;
@@ -187,7 +177,20 @@ body {
   font-size: 20px;
 }
 
-
+@media (max-width: 767px) {
+  .section-row-icons {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+  .icons {
+    width: 50px;
+  }
+  .card-text {
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+  }
+}
 /* INDEX - ACTIVIDADES */
 .grid-container-hacer {
   display: grid;
@@ -195,7 +198,7 @@ body {
   gap: 40px;
 }
 
-.title-actividades h2, .title-gastronomia h2 h2 {
+.title-actividades h2 {
   color: cornflowerblue;
   font-family: "Chelsea Market";
   font-size: 80px;
@@ -208,37 +211,33 @@ body {
 }
 
 .section-actividades {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
 .section-actividades div {
   flex: 1;
   margin: 0 10px;
   padding: 20px;
 }
-
 .section-actividades img {
   max-width: 100%;
   height: auto;
 }
-  
+
 .actividad {
-    position: relative;
-    flex: 1;
-    margin: 0 10px;
-    overflow: hidden;
+  position: relative;
+  flex: 1;
+  margin: 0 10px;
+  overflow: hidden;
 }
-  
 .actividad img {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    transition: filter 0.3s ease-in-out;
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  transition: filter 0.3s ease-in-out;
 }
-  
 .actividad:hover img {
   opacity: 50%;
 }
@@ -246,92 +245,88 @@ body {
   opacity: 10;
 }
 
-.actividad-titulo {
-    position: absolute;
-    font-size: 40px;
-    font-family: 'Chelsea Market', cursive;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #FBD700;
-    color: white;
-    padding: 50px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}  
-  
-.actividad:hover .actividad-titulo {
-    opacity: 10;
+.actividad-titulo, .gastronomia-titulo {
+  font-family: "Chelsea Market";
+  background-color: #FBD700;
+  color: white;
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .title-actividades h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .actividad .actividad-titulo, .actividad .gastronomia-titulo {
+    font-size: 20px;
+  }
+  .grid-container-hacer {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* INDEX - GASTRONOMÍA */
+.grid-container-comer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
+}
 
 .title-gastronomia h2 {
-    color: cornflowerblue;
-    font-family: 'Chelsea Market', cursive;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin: 100px 10px 0px 10px;
-    font-size: 80px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    background-color: #FBD700;
+  color: cornflowerblue;
+  font-family: "Chelsea Market";
+  font-size: 80px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #FBD700;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 100px 10px 20px 10px;
 }
 
 .section-gastronomia {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
 }
-  
 .section-gastronomia div {
-    flex: 1;
-    margin: 0 10px;
-    padding: 20px;
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
 }
-  
 .section-gastronomia img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-  
+
 .gastronomia {
-    position: relative;
-    flex: 1;
-    margin: 0 10px;
-    overflow: hidden;
+  position: relative;
+  flex: 1;
+  margin: 0 10px;
+  overflow: hidden;
 }
-    
 .gastronomia img {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    transition: filter 0.3s ease-in-out;
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  transition: filter 0.3s ease-in-out;
 }
-    
 .gastronomia:hover img {
-    opacity: 50%;
+  opacity: 50%;
 }
-  
-.gastronomia-titulo {
-    position: absolute;
-    font-size: 40px;
-    font-family: 'Chelsea Market', cursive;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #FBD700;
-    color: white;
-    padding: 50px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}  
-    
 .gastronomia:hover .gastronomia-titulo {
-    opacity: 10;
+  opacity: 10;
 }
 
 @media (max-width: 767px) {
@@ -403,41 +398,25 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-    .footer-balneario {
-        height: 200px;
-    }
-
-    .footer-balneario {
-        justify-content: center;
-    }
-
-    .footer-contacto h2,
-    .footer-contacto2 h2 {
-        font-size: 20px;
-    }
-
-    .footer-balneario .footer-contacto .items-contacto li img {
-        width: 20px;
-        height: 20px;
-        margin-right: 5px;
-    }
-
-    .footer-balneario .footer-contacto .items-contacto li p {
-        font-size: 10px;
-    }
-
-    .icons2 {
-        width: 25px;
-    }
-
-
-
-
-
-
-
-
-
+  .footer-balneario {
+    height: 200px;
+    justify-content: center;
+  }
+  .footer-balneario .footer-contacto .items-contacto li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .footer-balneario .footer-contacto .items-contacto li p {
+    font-size: 10px;
+  }
+  .footer-balneario .footer-contacto .footer-contacto h2,
+  .footer-balneario .footer-contacto .footer-contacto2 h2 {
+    font-size: 15px;
+  }
+  .footer-balneario .footer-contacto .icons2 {
+    width: 20px;
+  }
 }
 /* MAIN HEADERS */
 .main-title h2 {
@@ -487,11 +466,11 @@ body {
   height: auto;
   border-radius: 10px;
 }
- 
-@media (max-width: 850px) {
-    .grid-container-nosotros {
-      grid-template-columns: repeat(1, 1fr);
-    }
+
+@media (max-width: 767px) {
+  .grid-container-nosotros {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* TAB SERVICIOS */
 .grid-container {
@@ -519,9 +498,12 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-    .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .grid-item p {
+    font-size: 15px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* TAB ACTIVIDADES */
 .main-title-actividades h2 {
