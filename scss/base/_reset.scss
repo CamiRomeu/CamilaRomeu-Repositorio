@@ -9,5 +9,15 @@ body {
     padding: 0;
     background-image: url(../img/abstract_hand_painted_beach_themed_watercolour_background_2705.jpg);
     background-size: cover;
-}
+    cursor:url('../img/cursor.png'), auto;
 
+    a {
+        cursor:url('../img/cursor-mano.png'), auto;
+    }
+
+    .button-enviar {
+        &:hover {
+            cursor:url('../img/cursor-mano.png'), auto;
+        }
+    }
+}
