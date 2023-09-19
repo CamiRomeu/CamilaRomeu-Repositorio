@@ -245,7 +245,7 @@ body .button-enviar:hover {
   opacity: 50%;
 }
 .actividad:hover .actividad-titulo, .actividad:hover .gastronomia-titulo {
-  opacity: 10;
+  opacity: 50;
 }
 
 .actividad-titulo, .gastronomia-titulo {
@@ -551,6 +551,7 @@ body .button-enviar:hover {
 .grid-item img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 .grid-item p {
   color: black;
