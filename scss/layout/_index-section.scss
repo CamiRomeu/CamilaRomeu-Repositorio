@@ -1,35 +1,38 @@
 /* INDEX - FOTO SECTION */
-
-.titulo-h1 {
-    color: $secondary-color;
-    text-align: center;
-    font-family: 'Chelsea Market';
-    font-size: 80px;
-    text-shadow: $text-shadow; 
-}
- 
-.titulo-h2 {
-    color: $color-white;
-    text-align: center;
-    font-family: $font-family-dos;
-    font-weight: lighter;    
-    font-style: italic;
-    font-size: 60px;
-    text-shadow: $text-shadow;
-}
-
-@media (max-width:767px) {
+.card-img-overlay {
     .titulo-h1 {
-        font-weight: bolder;
-        font-size: 30px;
-        text-shadow: $text-shadow;
+        color: $secondary-color;
+        text-align: center;
+        font-family: 'Chelsea Market';
+        font-size: 80px;
+        text-shadow: $text-shadow; 
     }
 
     .titulo-h2 {
-        font-size: 20px;
-        font-weight: lighter; 
+        color: $color-white;
+        text-align: center;
+        font-family: $font-family-dos;
+        font-weight: lighter;    
+        font-style: italic;
+        font-size: 60px;
         text-shadow: $text-shadow;
-        margin-top: -10px;
+    }
+}
+
+@media (max-width:767px) {
+    .card-img-overlay {
+        .titulo-h1 {
+            font-weight: bolder;
+            font-size: 30px;
+            text-shadow: $text-shadow;
+        }
+
+        .titulo-h2 {
+            font-size: 20px;
+            font-weight: lighter; 
+            text-shadow: $text-shadow;
+            margin-top: -10px;
+        }
     }
 }
 
